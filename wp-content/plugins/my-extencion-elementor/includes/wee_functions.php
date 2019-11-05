@@ -136,15 +136,34 @@ final class wee_Elementor_my_Extencion {
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'wee_init_widgets' ] );
         add_action( 'elementor/controls/controls_registered', [ $this, 'wee_init_controls' ] );
         add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'wee_widget_styles' ] );
+        add_action( 'elementor/frontend/after_register_scripts', [ $this, 'wee_widget_scripts' ] );
+        add_action( 'elementor/elements/categories_registered', [ $this, 'wee_add_my_widget_categories']);
+
 
     }
     public function wee_widget_styles() {
 
-		wp_register_style( 'header-elementor-boostrap', plugins_url( 'css/', __FILE__ ) );
-		wp_register_style( 'header-elementor-my-estilos', plugins_url( 'css/widget-2.css', __FILE__ ) );
+		wp_register_style( 'header-elementor-boostrap', WEE_DIR_PATH . '/css/bootstrap_css/bootstrap-grid.min.css'  );
+		wp_register_style( 'header-elementor-my-estilos', plugins_url( 'css/my_elementor_estilos.css', WEE_DIR_PATH ) );
 
-	}
+    }
+    public function wee_widget_scripts() {
 
+		//  wp_register_script( 'widget-1', plugins_url( 'js/widget-1.js', WEE_DIR_PATH ) );
+		wp_register_script( 'bootstarp-js-extencion-elementor', plugins_url( 'js/bootstrap_js/bootstrap.bundle.min.js', WEE_DIR_PATH ), [ 'jquery' ] );
+
+    }
+    function wee_add_my_widget_categories( $elements_manager ) {
+
+        $elements_manager->add_category(
+            'Extencion de Elementor Playful',
+            [
+                'title' => __( 'Extencion de Elementor Playful', 'Extencion-elementor' ),
+                'icon' => 'fas fa-rocket',
+            ]
+        );
+    
+    }
 	/**
 	 * Admin notice
 	 *
@@ -246,7 +265,7 @@ final class wee_Elementor_my_Extencion {
        require_once  WEE_DIR_PATH . '/widgets/test-widget.php';
 
 		// Register widget
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Test_Widget() );
+		//\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Elementor_Test_Widget() );
 
 	}
 
@@ -266,7 +285,7 @@ final class wee_Elementor_my_Extencion {
        require_once  WEE_DIR_PATH  . '/controls/test-control.php';
 
 		// Register control
-		\Elementor\Plugin::$instance->controls_manager->register_control( 'control-type-', new \Test_Control() );
+		//\Elementor\Plugin::$instance->controls_manager->register_control( 'control-herader-1', Test_Control1() );
 
 	}
 
@@ -275,7 +294,7 @@ final class wee_Elementor_my_Extencion {
 wee_Elementor_my_Extencion::instance();
 
 if(wee_Elementor_my_Extencion::$estado=="ok"){
-    //require_once plugin_dir_path() . 'templates/wee_functions_templates.php';
+    require_once  WEE_DIR_PATH  . '/templates/wee_functions_templates.php';
 }
 
 ?>
