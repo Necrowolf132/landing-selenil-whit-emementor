@@ -34,14 +34,16 @@ function oceanwp_child_enqueue_parent_style() {
 		De esta manera carga en el resto de partes siempre u cuando mantenga el editado de elementor 
 		 */
 		wp_enqueue_style( 'Font-lato', get_stylesheet_directory_uri() . '/css/fonts/lato.css', ['child-style', 'elementor-post-7'], $version);
-		wp_enqueue_style( 'my-child-style', get_stylesheet_directory_uri() . '/css/my-child-style.css', ['child-style', 'elementor-post-7','Font-lato'], $version);
+		wp_enqueue_style( 'Fonticon', get_stylesheet_directory_uri() . '/css/fonts/fonticon/flaticon.css', ['child-style', 'elementor-post-7'], $version);
+		wp_enqueue_style( 'my-child-style', get_stylesheet_directory_uri() . '/css/my-child-style.css', ['child-style', 'elementor-post-7','Font-lato', 'Fonticon'], $version);
 		
 		/*
 		De esta manera carga en la vista de edicion de elementor mis librarias perzonalizadas 
 		 */
 		
 		wp_enqueue_style( 'Font-lato2', get_stylesheet_directory_uri() . '/css/fonts/lato.css', ['child-style', 'editor-preview', 'oceanwp-elementor-preview'], $version) ;
-		wp_enqueue_style( 'my-child-editor-style', get_stylesheet_directory_uri() . '/css/my-child-style.css', ['child-style', 'editor-preview', 'oceanwp-elementor-preview','Font-lato2'], $version) ;
+		wp_enqueue_style( 'Fonticon2', get_stylesheet_directory_uri() . '/css/fonts/fonticon/flaticon.css', ['child-style', 'editor-preview', 'oceanwp-elementor-preview'], $version);
+		wp_enqueue_style( 'my-child-editor-style', get_stylesheet_directory_uri() . '/css/my-child-style.css', ['child-style', 'editor-preview', 'oceanwp-elementor-preview','Font-lato2', 'Fonticon2'], $version) ;
 	}
 
 }
