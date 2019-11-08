@@ -1,4 +1,4 @@
-WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-07 16:43:51
+WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-08 16:35:02
 
 *WebP Convert 2.3.0*  ignited.
 - PHP version: 7.2.19
@@ -85,25 +85,25 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-07 16:4
 
 **Error: ** **No cwebp binaries could be executed (permission denied for user: "devilbox").** 
 No cwebp binaries could be executed (permission denied for user: "devilbox").
-cwebp failed in 508 ms
+cwebp failed in 665 ms
 
 *Trying: vips* 
 
 **Error: ** **Required Vips extension is not available.** 
 Required Vips extension is not available.
-vips failed in 17 ms
+vips failed in 12 ms
 
 *Trying: imagick* 
 
 **Error: ** **iMagick was compiled without WebP support.** 
 iMagick was compiled without WebP support.
-imagick failed in 9 ms
+imagick failed in 10 ms
 
 *Trying: gmagick* 
 
 **Error: ** **Required Gmagick extension is not available.** 
 Required Gmagick extension is not available.
-gmagick failed in 14 ms
+gmagick failed in 15 ms
 
 *Trying: imagemagick* 
 
@@ -142,25 +142,25 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-07 16:4
 
 **Error: ** **The exec call failed** 
 The exec call failed
-imagemagick failed in 709 ms
+imagemagick failed in 244 ms
 
 *Trying: graphicsmagick* 
 
 **Error: ** **gmagick is not installed** 
 gmagick is not installed
-graphicsmagick failed in 101 ms
+graphicsmagick failed in 19 ms
 
 *Trying: wpc* 
 
 **Error: ** **Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.** 
 Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.
-wpc failed in 14 ms
+wpc failed in 11 ms
 
 *Trying: ewww* 
 
 **Error: ** **Missing API key.** 
 Missing API key.
-ewww failed in 7 ms
+ewww failed in 5 ms
 
 *Trying: gd* 
 
@@ -190,5 +190,5 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-07 16:4
 Quality: 85. 
 gd succeeded :)
 
-Converted image in 1641 ms, reducing file size with 80% (went from 36 kb to 7 kb)
+Converted image in 1078 ms, reducing file size with 80% (went from 36 kb to 7 kb)
 

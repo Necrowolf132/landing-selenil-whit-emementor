@@ -1,4 +1,4 @@
-WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-04 21:27:45
+WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-08 16:27:10
 
 *WebP Convert 2.3.0*  ignited.
 - PHP version: 7.2.19
@@ -84,7 +84,7 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-04 21:2
 
 **Error: ** **No cwebp binaries could be executed (permission denied for user: "devilbox").** 
 No cwebp binaries could be executed (permission denied for user: "devilbox").
-cwebp failed in 328 ms
+cwebp failed in 482 ms
 
 *Trying: vips* 
 
@@ -96,13 +96,13 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-04 21:2
 
 **Error: ** **iMagick was compiled without WebP support.** 
 iMagick was compiled without WebP support.
-imagick failed in 4 ms
+imagick failed in 6 ms
 
 *Trying: gmagick* 
 
 **Error: ** **Required Gmagick extension is not available.** 
 Required Gmagick extension is not available.
-gmagick failed in 3 ms
+gmagick failed in 5 ms
 
 *Trying: imagemagick* 
 
@@ -142,25 +142,25 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-04 21:2
 
 **Error: ** **The exec call failed** 
 The exec call failed
-imagemagick failed in 162 ms
+imagemagick failed in 336 ms
 
 *Trying: graphicsmagick* 
 
 **Error: ** **gmagick is not installed** 
 gmagick is not installed
-graphicsmagick failed in 20 ms
+graphicsmagick failed in 21 ms
 
 *Trying: wpc* 
 
 **Error: ** **Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.** 
 Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.
-wpc failed in 13 ms
+wpc failed in 11 ms
 
 *Trying: ewww* 
 
 **Error: ** **Missing API key.** 
 Missing API key.
-ewww failed in 3 ms
+ewww failed in 4 ms
 
 *Trying: gd* 
 
@@ -190,5 +190,5 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-04 21:2
 Consider setting quality to "auto" instead. It is generally a better idea
 gd succeeded :)
 
-Converted image in 577 ms, reducing file size with 88% (went from 12 kb to 1 kb)
+Converted image in 1178 ms, reducing file size with 88% (went from 12 kb to 1 kb)
 

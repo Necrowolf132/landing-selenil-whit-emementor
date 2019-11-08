@@ -1,4 +1,4 @@
-WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-05 21:40:44
+WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-08 16:26:51
 
 *WebP Convert 2.3.0*  ignited.
 - PHP version: 7.2.19
@@ -84,25 +84,25 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-05 21:4
 
 **Error: ** **No cwebp binaries could be executed (permission denied for user: "devilbox").** 
 No cwebp binaries could be executed (permission denied for user: "devilbox").
-cwebp failed in 426 ms
+cwebp failed in 639 ms
 
 *Trying: vips* 
 
 **Error: ** **Required Vips extension is not available.** 
 Required Vips extension is not available.
-vips failed in 13 ms
+vips failed in 14 ms
 
 *Trying: imagick* 
 
 **Error: ** **iMagick was compiled without WebP support.** 
 iMagick was compiled without WebP support.
-imagick failed in 4 ms
+imagick failed in 9 ms
 
 *Trying: gmagick* 
 
 **Error: ** **Required Gmagick extension is not available.** 
 Required Gmagick extension is not available.
-gmagick failed in 3 ms
+gmagick failed in 10 ms
 
 *Trying: imagemagick* 
 
@@ -142,25 +142,25 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-05 21:4
 
 **Error: ** **The exec call failed** 
 The exec call failed
-imagemagick failed in 137 ms
+imagemagick failed in 1150 ms
 
 *Trying: graphicsmagick* 
 
 **Error: ** **gmagick is not installed** 
 gmagick is not installed
-graphicsmagick failed in 20 ms
+graphicsmagick failed in 402 ms
 
 *Trying: wpc* 
 
 **Error: ** **Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.** 
 Missing URL. You must install Webp Convert Cloud Service on a server, or the WebP Express plugin for Wordpress - and supply the url.
-wpc failed in 9 ms
+wpc failed in 6 ms
 
 *Trying: ewww* 
 
 **Error: ** **Missing API key.** 
 Missing API key.
-ewww failed in 3 ms
+ewww failed in 5 ms
 
 *Trying: gd* 
 
@@ -190,5 +190,5 @@ WebP Express 0.17.2. Conversion triggered using bulk conversion, 2019-11-05 21:4
 Consider setting quality to "auto" instead. It is generally a better idea
 gd succeeded :)
 
-Converted image in 652 ms, reducing file size with 65% (went from 17 kb to 6 kb)
+Converted image in 2690 ms, reducing file size with 65% (went from 17 kb to 6 kb)
 
