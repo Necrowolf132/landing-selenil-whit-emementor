@@ -12,13 +12,21 @@
     background: -ms-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(234,234,234,1) 24%, rgba(250,250,250,1) 51%, rgba(234,234,234,1) 78%, rgba(234,234,234,1) 100%);
     background: linear-gradient(to bottom, rgba(234,234,234,1) 0%, rgba(234,234,234,1) 24%, rgba(250,250,250,1) 51%, rgba(234,234,234,1) 78%, rgba(234,234,234,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#eaeaea', GradientType=0 );
-    position: fixed;
+    position: absolute;
     z-index: 100;
     width: 100%;
     box-shadow: none;
     transition: all linear 0.3s;
     border:none;
     
+}
+
+#sidr .sidr-inner:first-child {
+    display: none;
+}
+
+#sidr .sidr-inner:last-child {
+    display: none;
 }
 
 .header-top.relieve {
@@ -63,14 +71,14 @@ nav #navegador-main #site-navigation-wrap .dropdown-menu>li>a:hover {
     max-width: 480px;
 }
 .boton-naranja a.elementor-button {
-    background: rgba(223,95,25,1);
-    background: -moz-linear-gradient(top, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
+    background-color: #ff7c06 !important;
+   /* background: -moz-linear-gradient(top, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(21%, rgba(223,95,25,1)), color-stop(36%, rgba(229,99,21,1)), color-stop(100%, rgba(255,118,6,1)));
     background: -webkit-linear-gradient(top, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
     background: -o-linear-gradient(top, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
     background: -ms-linear-gradient(top, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
     background: linear-gradient(to bottom, rgba(223,95,25,1) 21%, rgba(229,99,21,1) 36%, rgba(255,118,6,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5f19', endColorstr='#ff7606', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#df5f19', endColorstr='#ff7606', GradientType=0 );*/
 }
 .colunm-azul-gradiant {
     background: rgba(110,124,201,1);
@@ -88,6 +96,9 @@ nav #navegador-main #site-navigation-wrap .dropdown-menu>li>a:hover {
 .colunm-azul-gradiant ul {
     list-style: none;
 }
+.colunm-azul-gradiant ul.selenil-ul-caspa {
+    margin: 0px 0 15px 20px;
+}
 .colunm-azul-gradiant .elementor-widget-heading.elementor-widget-heading h2.elementor-heading-title {
     font-family: 'Lato';
     color: white;
@@ -96,12 +107,11 @@ nav #navegador-main #site-navigation-wrap .dropdown-menu>li>a:hover {
 }
 .colunm-azul-gradiant li {
     color: white;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     line-height: 34px;
     margin-bottom: 12px;
-
 }
 .colunm-azul-gradiant li ul li  {
     font-size: 23px;
@@ -335,6 +345,9 @@ nav #navegador-main #site-navigation-wrap .dropdown-menu>li>a:hover {
     .menu-movil.elementor-column.elementor-element[data-element_type="column"] > .elementor-column-wrap.elementor-element-populated > .elementor-widget-wrap {
         flex-direction: column;
     }
+    .header-top{
+        position: fixed;
+    }
     .imagen-logo {
         max-width: 110px;
     }
@@ -363,7 +376,25 @@ nav #navegador-main #site-navigation-wrap .dropdown-menu>li>a:hover {
     .card-icon-selenil ul {
         width: 90%;
     }
-
+    .logo-principal {
+        max-width: 240px;
+    }
+    .section-naranja-transparente li {
+    font-size: 23px;
+    }
+    .acomodo-product .my-list-selenil li {
+        font-family: 'Lato';
+        font-size: 23px;
+    }
+    .card-icon-selenil ul li ul li a {
+        font-size: 16px;
+    }
+    .card-icon-selenil.segunda-card ul li span {
+        font-size: 17px;
+    }
+    .card-icon-selenil.segunda-card ul li a {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {

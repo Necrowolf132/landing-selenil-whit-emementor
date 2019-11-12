@@ -19,4 +19,27 @@ jQuery(document).ready(function(){
         };
     };
     navbarFixed();
+
 });
+
+jQuery('a[href^="#-"]').click(rodar);
+
+ function  rodar(event) {
+    this.preventDefault();
+    var destino = jQuery(this.hash).offset().top;
+    destino =  jQuery(this.hash);
+    if (destino.length == 0) {
+        console.log('estoy aqui 2');
+        destino = jQuery('a[name="' + this.hash.substr(1) + '"]');
+    }
+    if (destino.length == 0) {
+        console.log('estoy aqui 3');
+        destino = jQuery('html');
+    }
+    var mover =   jQuery(this.hash).offset().top;
+    console.log(mover);
+    jQuery('html, body').animate({ scrollTop: mover + 120});
+
+    return false;
+
+}
