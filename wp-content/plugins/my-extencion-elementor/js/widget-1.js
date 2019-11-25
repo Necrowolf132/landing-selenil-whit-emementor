@@ -24,17 +24,26 @@ jQuery(document).ready(function(){
     function  rodar(event) {
        //this.preventDefault();
        var destino = jQuery(this.hash).offset().top;
+       var anchoVentana = window.innerWidth || document.body.clientWidth
        destino =  jQuery(this.hash);
        if (destino.length == 0) {
            console.log('estoy aqui 2');
            destino = jQuery('a[name="' + this.hash.substr(1) + '"]');
        }
        if (destino.length == 0) {
-           console.log('estoy aqui 3');
            destino = jQuery('html');
        }
-       var mover =   jQuery(this.hash).offset().top;
-       console.log(mover);
+       var restaAltura = 0;
+       if(anchoVentana < 768){
+         restaAltura = 81;
+         jQuery('#navbarNav').collapse('toggle'); 
+       }else if(anchoVentana < 1025){
+         restaAltura = 109;
+         jQuery('#navbarNav').collapse('toggle');   
+       } else {
+         restaAltura = 129;
+       }
+       var mover =   jQuery(this.hash).offset().top - restaAltura ;
        jQuery('html, body').animate({ scrollTop: mover});
    
        return false;

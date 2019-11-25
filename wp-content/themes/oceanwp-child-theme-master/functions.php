@@ -28,7 +28,7 @@ function oceanwp_child_enqueue_parent_style() {
 	// Load the stylesheet
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'oceanwp-style' ), $version );
 	if(is_page_template("wee-template-full-sin-header.php")){
-		wp_enqueue_script("js-my-child", get_stylesheet_directory_uri() . "/js/js-my-child.js", array("jquery"), false, true);
+		//wp_enqueue_script("js-my-child", get_stylesheet_directory_uri() . "/js/js-my-child.js", array("jquery"), false, true);
 		
 		/*
 		De esta manera carga en el resto de partes siempre u cuando mantenga el editado de elementor 

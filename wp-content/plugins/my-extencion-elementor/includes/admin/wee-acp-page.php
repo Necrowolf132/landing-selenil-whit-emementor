@@ -1,5 +1,6 @@
 <?php
-    $traer_my_extencion = wee_Elementor_my_Extencion::instance();
+
+    $traer_my_extencion = My_elementor_extencion\wee_Elementor_my_Extencion::instance();
     if($traer_my_extencion::$estado=='ok'){
 ?> 
 
