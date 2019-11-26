@@ -37,14 +37,10 @@ jQuery(document).ready(function(){
        var restaAltura = 0;
        if(anchoVentana < 768){
          restaAltura = 81;
-         if(colapce != "boton-servicios"){
-          jQuery('#navbarNav').collapse('toggle'); 
-         }
+         jQuery('#navbarNav').collapse('hide'); 
        }else if(anchoVentana < 1025){
          restaAltura = 109;
-         if(colapce != "boton-servicios" && anchoVentana < 992){
-          jQuery('#navbarNav').collapse('toggle'); 
-         }
+          jQuery('#navbarNav').collapse('hide'); 
        } else {
          restaAltura = 129;
        }
