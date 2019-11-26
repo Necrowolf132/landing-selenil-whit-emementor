@@ -42,7 +42,7 @@ jQuery(document).ready(function(){
          }
        }else if(anchoVentana < 1025){
          restaAltura = 109;
-         if(colapce != "boton-servicios"){
+         if(colapce != "boton-servicios" && anchoVentana < 992){
           jQuery('#navbarNav').collapse('toggle'); 
          }
        } else {
