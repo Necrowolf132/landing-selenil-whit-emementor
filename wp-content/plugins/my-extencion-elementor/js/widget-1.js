@@ -23,6 +23,7 @@ jQuery(document).ready(function(){
 
     function  rodar(event) {
        //this.preventDefault();
+       var colapce = jQuery(this).attr('id');
        var destino = jQuery(this.hash).offset().top;
        var anchoVentana = window.innerWidth || document.body.clientWidth
        destino =  jQuery(this.hash);
@@ -36,10 +37,14 @@ jQuery(document).ready(function(){
        var restaAltura = 0;
        if(anchoVentana < 768){
          restaAltura = 81;
-         jQuery('#navbarNav').collapse('toggle'); 
+         if(colapce != "boton-servicios"){
+          jQuery('#navbarNav').collapse('toggle'); 
+         }
        }else if(anchoVentana < 1025){
          restaAltura = 109;
-         jQuery('#navbarNav').collapse('toggle');   
+         if(colapce != "boton-servicios"){
+          jQuery('#navbarNav').collapse('toggle'); 
+         }
        } else {
          restaAltura = 129;
        }
